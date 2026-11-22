@@ -6,7 +6,7 @@ resource "aws_db_instance" "rds" {
   db_subnet_group_name   = aws_db_subnet_group.sub-grp.id
   engine                 = "mysql"
   engine_version         = "8.4.8"
-  instance_class         = "db.t3.micro"
+  instance_class         = "db.c7i-flex.large"
   multi_az               = true
   db_name                = "mydb"
   username               = "admin"
